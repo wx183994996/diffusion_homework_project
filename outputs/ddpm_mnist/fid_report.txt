@@ -1,0 +1,8 @@
+DDPM MNIST FID-like Evaluation Report
+====================================
+Checkpoint: outputs/ddpm_mnist/ckpt_best.pt
+Num samples: 1000
+FID-like score: 0.009205
+
+Note: This project uses a lightweight CNN feature extractor for classroom evaluation.
+It is suitable for relative comparison in this assignment, but is not standard ImageNet Inception FID.
