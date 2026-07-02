@@ -87,29 +87,6 @@ python evaluate_fid.py --ckpt outputs/ddpm_mnist/ckpt_best.pt --num-samples 1000
 outputs/ddpm_mnist/fid_report.txt
 ```
 
-说明：为了适配课堂作业和轻量运行，本项目默认使用 MNIST 训练的轻量 CNN 特征提取器计算 FID-like 指标。该指标适合本作业内部比较，但不等同于 ImageNet Inception-v3 标准 FID。
-
-## 4. 作业提交建议
-
-提交内容建议包括：
-
-1. 终端训练日志截图：运行 `train_ddpm.py` 的终端截图。
-2. Loss 曲线：`outputs/ddpm_mnist/loss_curve.png`。
-3. 生成结果：`generated_grid.png` 或 `samples_epoch_xxx.png`。
-4. FID 报告：`fid_report.txt`。
-5. GitHub 仓库：上传本项目完整代码。
-
-## 常用参数
-
-```bash
-python train_ddpm.py \
-  --epochs 30 \
-  --batch-size 128 \
-  --lr 2e-4 \
-  --timesteps 1000 \
-  --base-channels 64 \
-  --out-dir outputs/ddpm_mnist
-```
 
 如果显存不足，可降低：
 
